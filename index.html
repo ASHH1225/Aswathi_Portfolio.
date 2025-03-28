@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aswathi Sasidharan Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Aswathi Sasidharan</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#internship-section" class="nav-link"><span>Internships</span></a></li>
+			  <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <!--home-->
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile.png-removebg-preview.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hai!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Aswathi Sasidharan</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Junior Data Analyst  ',
+						'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Junior Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p>
+							<!-- <a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>  -->
+							<a href="https://github.com/ASHH1225"  class="btn btn-primary py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+   <!--about-->
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img rounded-3xl">
+										<img src="images/profile.jpeg" class="img-fluid rounded-circle b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Aswathi Sasidharan</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>0-1 Years</span></p>
+										<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+									  </div>
+									</div>
+								  </div>
+								  <ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Analytics</span></li>
+									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
+									<li class="d-flex"><span>Education:</span> <span>Master of Science</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English,  Hindi, Malayalam </span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span> Microsoft Power BI </span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Microsoft Excel, SQl, Python,  Data visualization</span></li>
+									<li class="d-flex"><span>Interest:</span> <span> Traveling, Drawing,  Teaching</span></li>
+									
+								</ul>
+								<!-- <div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>  -->
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Hai! I am Aswathi Sasidharan, a data enthusiast with a strong passion for uncovering insights and solving complex problems through data analysis. I have obtained certifications such as Data Analytics using Power BI, MS Excel, Python, SQL and I'm eager to apply my skills to real-world challenges.
+
+									I have experience working with tools such as Excel, Power BI, and Python to effectively clean, analyze, and visualize data. My projects involved analyzing datasets to identify trends, creating dashboards, and presenting actionable recommendations.
+									I am committed to being updated on the ongoing trends in the data analytics world, and my target is to use data to help businesses make the proper decisions and spur growth.
+									
+									Please feel free to look around my portfolio and connect with me regarding how you can leverage my strengths on your team or projects.</p>
+								
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href=https://www.linkedin.com/in/aswathi-sasidharan-5587231bb/
+									" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+   <!--resume-->	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Aspiring data analyst with a strong foundation in data analysis and data visualization. Hand-on skills have been acquired through projects and internships, by working with data sets to extract insights and support decision making. Driven by the passion for data driven tools to solve real world problems and actively seeking to continuously improve the expertise in the use of advanced analytics.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">April 2024 – Present</span>
+						<h2>Independent Data Analyst</h2>
+						<span class="position">Self Employed</span>
+						<p class="mt-4"><ul><li>Collected and analyzed 5,000+ rows of data from online sources to extract meaningful business insights.</li>
+								<li> Designed 5+ interactive Power BI dashboards, enabling better visualization of sales trends and customer behavior.</li>
+								<li> Developed automated Excel reports, cutting down manual data processing time by 30%</li>
+								</ul>
+						</p>
+					</div>
+
+				</div>
+				
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">November 2021 - April 2024</span>
+						<h2>Academic Specialist</h2>
+						<span class="position">Byju’s Think and Learn</span>
+						<p class="mt-4"Byju's Think and Learn is an educational technology company that creates interactive and engaging learning experiences for students through personalized digital content and adaptive learning platforms.<ul>
+								<li> Conducted data-driven performance analysis for 1,000+ students, leading to a 15% improvement in academic outcomes.</li>
+								<li> Audited 200+ classroom sessions, generating reports to enhance teaching effectiveness.</li>
+								<li> Led 30+ PTA meetings, translating student performance data into actionable recommendations for parents and teachers</li>
+									<li>Managed assessment data, ensuring data accuracy in academic evaluations.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">June 2019 – June 2021</span>
+    					<h2>Master of Science - Physics</h2>
+    					<span class="position">Jain University, Bangalore</span>
+    					<p class="mt-4">Grade: Distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">June 2016 – June 2019</span>
+    					<h2>Bachelor of Science - Physics</h2>
+    					<span class="position">NSS College, Ottapalam, Kerala</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+				</div>
+    		</div>
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+  <!--project-->
+  <section class="ftco-section" id="project-section">
+	<div class="container">
+	  <div class="row justify-content-center mb-5 pb-5">
+		<div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+		  <h1 class="big big-2">Projects</h1>
+		  <h2 class="mb-4">Projects</h2>
+		  <p>Below are the sample Data Analytics projects on SQL, Python, Power BI &amp; ML.</p>
+		</div>
+	  </div>
+	  <div class="row d-flex">
+		<div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/ASHH1225/Grand-Stores-Sales-Report" class="block-20 zoom-effect" style="background-image: url('images/Grand_store_sales.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/ASHH1225/Grand-Stores-Sales-Report">Grand Store Sales Analysis</a></h3>
+			  <p>Conducted analysis on Grand Store Sales data, focusing on time series analysis to offer valuable insights, precise sales forecasting, and the creation of interactive dashboards using Power BI, for driving business success.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/ASHH1225/Food_Sales" class="block-20 zoom-effect" style="background-image: url('images/food\ sales\ image.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/ASHH1225/Food_Sales">Food Sales and Profitability Analysis</a></h3>
+			  <p> Analyzed and optimized the financial dynamics of a food delivery service using Power BI, identifying cost-saving opportunities, revenue growth strategies, and effective pricing and commission models to enhance profitability.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
+			<div class="blog-entry">
+			<a href="https://github.com/ASHH1225/Vrinda-Store-Sales-Analysis" class="block-20 zoom-effect" style="background-image: url('images/Vrinda_store_sales.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/ASHH1225/Vrinda-Store-Sales-Analysis">Vrinda Store Sales Analysis</a></h3>
+			  <p>Analyzed the sales data in Excel to uncover significant insights for business expansion.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  <br>
+	  <!-- added justify-content-center to center align the last two projects -->
+	  <div class="row d-flex justify-content-center">  
+		  <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
+			  <div class="blog-entry justify-content-end">
+			  <a href="https://github.com/ASHH1225/Diwali-Sales-Analysis" class="block-20 zoom-effect" style="background-image: url('images/diwali\ sales\ image.png');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href="https://github.com/ASHH1225/Diwali-Sales-Analysis">Diwali Sales Analysis</a></h3>
+				<p>Performed Exploratory Data Analysis on Diwali data using Python to improve customer experience.</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
+			  <div class="blog-entry justify-content-end">
+			  <a href="https://github.com/ASHH1225/Pizza_Sales--SQL" class="block-20 zoom-effect" style="background-image: url('images/pizza\ sales\ image.png');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href="https://github.com/ASHH1225/Pizza_Sales--SQL">Pizza Sales Analysis</a></h3>
+				<p>This project involves analyzing pizza sales data through SQL queries to address key business questions and generate valuable insights.</p>
+			  </div>
+			</div>
+		  </div>
+	   </div>
+	</div>
+  </section>
+	   <!--intership-->	
+	   <section class="ftco-section ftco-no-pb" id="internship-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Internships</h1>
+            <h2 class="mb-4">Internships</h2>
+			<p>Below are some of the internships I have completed.</p>
+            </div>
+        </div>
+		<br>
+		
+		<div class="row">
+			
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">August 2024</span>
+						<h2>Job Simulation on Forage </h2>
+						<span class="position">Accenture</span>
+						<li>Effectively carried out a simulation to offer advisory services to a hypothetical social media client as a Data Analyst at Accenture</li>
+								<li>Prepared a PowerPoint deck and video presentation to communicate key insights for the client and internal stakeholders</li>
+								</ul>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">August 2024</span>
+						<h2>Job Simulation on Forage </h2>
+						<span class="position">pwc</span>
+						<li>I successfully engaged in a job simulation that enhanced my Power BI skills, allowing me to gain a deeper
+							understanding of clients and their data visualization requirements.
+							</li>
+								<li>Demonstrated expertise in data visualization through the creation of Power BI dashboards that effectively conveyed KPIs,
+									showcasing the ability to respond to client requests with well-designed solutions.
+									</li>
+								</ul>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">October 2024</span>
+						<h2>Group Data Visualization: Empowering Business with Effective Insight on Forage </h2>
+						<span class="position">Tata</span>
+						<li>Successfully executed a simulation focused on developing data visualizations for Tata Consultancy Services.</li>
+								<li>Formulated questions for a meeting with the client's senior leadership.</li>
+								<li>Designed visual representations for data analysis to assist executives with effective decision making.</li>
+								</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+    	</div>
+    </section>
+	<!--certifications-->
+	<section class="ftco-section ftco-no-pb" id="certification-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Certifications</h1>
+            <h2 class="mb-4">Certifications</h2>
+			<p>Below are some of the certification courses I have done.</p>
+            </div>
+        </div>
+		<br>
+		
+		<div class="row">
+			
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">September 2024</span>
+						<h2>HackerRank Skill Certification on SQL(Basics).</h2>
+						<p class="mt-4">
+							<a href="https://www.hackerrank.com/certificates/iframe/ae04f17988f2">See More..</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">March 2024</span>
+						<h2>Microsoft Power BI Desktop Masterclass on Udemy .</h2>
+						<p class="mt-4">
+							<a href="https://www.udemy.com/certificate/UC-82faea27-e637-47fb-b76b-77298ed016d5/">See More..</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">November 2023</span>
+						<h2>Python for Data Analysis and Visualization on Udemy.</h2>
+						<p class="mt-4">
+							<a href="https://www.udemy.com/certificate/UC-b82da9cc-3914-46b6-a017-83416f195cd9/">See More..</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">March 2023</span>
+						<h2>Google Sheets: Advanced Formulas and Functions on
+							LinkedIn learning.</h2>
+						<p class="mt-4">
+							<a href="https://www.linkedin.com/learning/certificates/8aabba628ef92f4a094e0eaf383d1c21a7c202d9254be7640217187898e87db8">See More..</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+    	</div>
+    </section>
+<!--counter-->
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <!-- <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="6">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image:url(images/bg_1.jpg) ">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> Data-driven decisions are the best decisions &amp I make them happen! </h4>
+						<br>
+						<p><a href=" https://github.com/ASHH1225" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+<!--contact-->
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Mumbai, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://917306211894">+91 7306211894</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmXHmxXPLTptfxkSssXhWTrzMSnvQlMhNxXHbMQwqvHZjNzgjSzcxgBKqLPrBjcjMVWFlc">aswathi9521@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">Check Out</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div> -->
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/aswathi-sasidharan-5587231bb/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://github.com/ASHH1225"><span class="icon-github"></span></a></li>
+					 <li class="ftco-animate"><a href="https://www.instagram.com/aswathi_s_dharan?igsh=cXAycmM1ZjFpcjkx"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+ <!--footer-->	
+    <!-- <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center"> -->
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			<!-- </div>
+		  </div>
+		</div>
+	  </footer> -->
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
